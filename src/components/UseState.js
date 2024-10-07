@@ -15,7 +15,7 @@ function HooksUseState() {
 
     const increaseCounter = () => {
         // setCounter(counter + 1);
-        // setDetails({counter:details.counter + 1})
+        // setDetails({counter:details.counter + 1}) 
 
         //When we are dealing with Objects or array 
         //first we need to add all prev values and then update what we want to update
@@ -25,7 +25,7 @@ function HooksUseState() {
     return (
         <div className='trialHooks'>
             <input type="text" onChange={e => e.target.value}/>
-            <h1>{details.name} has clicked! Counter: {details.counter} times..!!</h1>
+            <h1>Counter: {details.counter} times..!!</h1>
             <button onClick={increaseCounter}>Increase</button>
         </div>
     );
